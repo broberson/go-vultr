@@ -2,7 +2,7 @@ package main
 
 import (
 	"bytes"
-	"github.com/golang/crypto/ssh"
+	"golang.org/x/crypto/ssh"
 	"encoding/json"
 	"errors"
 	"fmt"
