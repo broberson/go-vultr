@@ -191,18 +191,18 @@ func runCreateCmd(cmd *commander.Command, args []string) error {
 }
 
 type serverInfo struct {
-	Os                 string `json:"os"`
-	Ram                string `json:"ram"`
-	Disk               string `json:"disk"`
-	MainIp             string `json:"main_ip"`
-	VcpuCount          string `json:"vcpu_count"`
-	Location           string `json:"location"`
-	DefaultPassword    string `json:"default_password"`
-	DateCreated        string `json:"date_created"`
-	PendingCharges     string `json:"pending_charges"`
-	Status             string `json:"status"`
-	CostPerMonth       string `json:"cost_per_month"`
-	CurrentBandwidthGb int    `json:"current_bandwidth_gb"`
+	Os                 string  `json:"os"`
+	Ram                string  `json:"ram"`
+	Disk               string  `json:"disk"`
+	MainIp             string  `json:"main_ip"`
+	VcpuCount          string  `json:"vcpu_count"`
+	Location           string  `json:"location"`
+	DefaultPassword    string  `json:"default_password"`
+	DateCreated        string  `json:"date_created"`
+	PendingCharges     string  `json:"pending_charges"`
+	Status             string  `json:"status"`
+	CostPerMonth       string  `json:"cost_per_month"`
+	CurrentBandwidthGb float32 `json:"current_bandwidth_gb"`
 }
 
 func runSshCmd(cmd *commander.Command, args []string) error {
